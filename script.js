@@ -1,12 +1,12 @@
 function firstChar(text) {
   // your code here
-	str =text.split('');
-	 for(let i = 0; i < str.length; i++) {
-        if(str[i] !== ' ') {
-            return str[i];
-        }
+	str =text
+	  str = str.trim();
+    if(str.length === 0) {
+        return ''; 
+    } else {
+        return str[0];
     }
-    return '';
  
  const text = prompt("Enter text:");
  alert(firstChar(text));  
