@@ -7,6 +7,6 @@ function firstChar(text) {
             return chars[i];
         }
     }
-    return '';
+    return `''`;
  const text = prompt("Enter text:");
  alert(firstChar(text));  
